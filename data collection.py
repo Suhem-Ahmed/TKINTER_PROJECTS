@@ -4,6 +4,10 @@ from tkinter import *
 from tkinter import filedialog
 from tkinter import messagebox
 
+#CODE WRITTEN AND MANAGED BY MSA 
+#(MOHAMMED-SUHEM-AHMED)
+
+
 root = Tk()
 root.title("Data Collection")
 root.geometry("450x450")
