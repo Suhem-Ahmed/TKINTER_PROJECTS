@@ -4,10 +4,6 @@ from tkinter import *
 from tkinter import filedialog
 from tkinter import messagebox
 
-#CODE WRITTEN AND MANAGED BY MSA 
-#(MOHAMMED-SUHEM-AHMED)
-
-
 root = Tk()
 root.title("Data Collection")
 root.geometry("450x450")
@@ -44,10 +40,18 @@ def on_exit():
 
 def view():
     # Provide the path to the folder you want to open
-    folder_path = "/home/msa/Documents/INFO_DATA"  # Change this path to the desired folder
+    try:
+        folder_path = "/home/msa/Documents/INFO_DATA"  # Change this path to the desired folder
 
     # Open the file explorer at the specified folder
-    os.system(f'xdg-open "{folder_path}"')
+        os.system(f'xdg-open "{folder_path}"')
+
+    finally:
+        folder_path1 = r"C:\Users\HP\Documents\INFO_DATA"
+
+    # Open the file explorer at the specified folder
+        os.system(f'explorer "{folder_path1}"')
+
 
 def button_save_command():
     # Get the user's input from the "Name" entry field
